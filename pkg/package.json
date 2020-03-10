@@ -1,0 +1,14 @@
+{
+  "name": "TMP",
+  "collaborators": [
+    "DrHam"
+  ],
+  "version": "0.0.1",
+  "files": [
+    "TMP_bg.wasm",
+    "TMP.js",
+    "TMP.d.ts"
+  ],
+  "browser": "TMP.js",
+  "types": "TMP.d.ts"
+}

@@ -1,0 +1,47 @@
+
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rusty rust</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+</head>
+
+
+
+<body>
+
+  <input type="text" id="input" onkeyup="myFunction()" placeholder="Search for names..">
+  <small id="s" class="text-muted"></small>
+  <script src='./pkg/TMP.js'></script>
+
+
+  <div class="card-deck" id="c" >
+
+
+</body>
+
+
+<script>
+
+    
+  window.addEventListener('load', async () => {
+    await wasm_bindgen('./pkg/TMP_bg.wasm');  
+    //We want to get basic server info as soon as possible   
+    wasm_bindgen.get_servers()
+  });
+   function myFunction(){
+    var i = document.getElementById("input").value;
+      wasm_bindgen.get_player(i)
+    }
+
+ 
+</script>
+</html>
+
+
+<style>
+
+</style>
