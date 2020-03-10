@@ -13,7 +13,7 @@
 
 <body>
 
-  <input type="text" id="input" onkeyup="myFunction()" placeholder="Search for names..">
+  <input type="text" id="input" onkeyup="defunction()" placeholder="Search for names..">
   <small id="s" class="text-muted"></small>
   <script src='./pkg/TMP.js'></script>
 
@@ -32,7 +32,7 @@
     //We want to get basic server info as soon as possible   
     wasm_bindgen.get_servers()
   });
-   function myFunction(){
+   function defunction(){
     var i = document.getElementById("input").value;
       wasm_bindgen.get_player(i)
     }
