@@ -7,3 +7,7 @@ In order to make the code 'work' (aka compiled), as it needs to be 'glued' to JS
 
 
 Any suggestion (preferably via the TMP thread) or commit is welcome. 
+
+
+
+https://dr-ham.github.io/tmp-rust/
